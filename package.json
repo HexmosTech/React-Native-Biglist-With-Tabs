@@ -1,0 +1,11 @@
+{
+    "name": "BigList-With-Tabs",
+    "version": "1.0.0",
+    "main": "./src/index.js",
+    "author": "flyweight",
+    "license": "MIT",
+    "dependencies": {
+        "react-native-big-list": "^1.4.3",
+        "react-native-paper": "^4.11.1"
+    }
+}
