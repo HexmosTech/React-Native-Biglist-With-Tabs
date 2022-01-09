@@ -9,8 +9,9 @@
 ## Manage biglist items by scrolling through section tabs 
 </div>
 <br/>
+
 ### 🎨 Screenshot
-<img src="./assets/Biglistwithtabs.gif" width="500"  /> 
+<img src="./assets/Biglistwithtabs.gif" width="300" height='600'  /> 
 <br/>
 
 ### How to use ?
