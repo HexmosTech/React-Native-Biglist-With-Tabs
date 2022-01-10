@@ -5,16 +5,6 @@ import { StatusBar } from "expo-status-bar";
 import BigList from "react-native-big-list";
 export default function SectionList(props) {
   const componentRef = React.useRef(null);
-  const renderItem = ({ item}) => {
-    return (
-      <List.Item
-        title={item.name}
-        onPress={props.onClickItem}
-        style={styles.container}
-        left={(props) => <List.Icon {...props} icon="account" />}
-      />
-    );
-  };
 
   const renderEmpty = () => <List.Item title="No items" />;
 
@@ -45,10 +35,10 @@ export default function SectionList(props) {
       </View>
       <KeyboardAvoidingView style={styles.container}>
         <BigList
+          {...props}
           style={styles.container}
           sections={props.sectiondata}
           itemHeight={50}
-          renderItem={renderItem}
           renderEmpty={renderEmpty}
           sectionHeaderHeight={0}
           renderSectionHeader={renderSectionHeader}
