@@ -3,7 +3,9 @@ import { KeyboardAvoidingView, StyleSheet, View } from "react-native";
 import { Appbar, List, Button } from "react-native-paper";
 import { StatusBar } from "expo-status-bar";
 import BigList from "react-native-big-list";
-export default function SectionList(props) {
+
+
+export default function SectionList({ style, ...props }) {
   const componentRef = React.useRef(null);
 
   const renderEmpty = () => <List.Item title="No items" />;
@@ -36,7 +38,10 @@ export default function SectionList(props) {
       <KeyboardAvoidingView style={styles.container}>
         <BigList
           {...props}
-          style={styles.container}
+          style={{
+            ...styles.container,
+            ...props.style
+          }}
           sections={props.sectiondata}
           itemHeight={50}
           renderEmpty={renderEmpty}
