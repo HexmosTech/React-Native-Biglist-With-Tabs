@@ -1,6 +1,6 @@
 {
-    "name": "BigList-With-Tabs",
-    "version": "1.0.0",
+    "name": "biglist-with-tabs",
+    "version": "1.0.1",
     "main": "./src/index.js",
     "author": "flyweight",
     "license": "MIT",
